@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="SuperState Terminal - Pufiya, Prophet of The Oracle. Divine blockchain revelation on Solana."
+    />
+    <title>SuperState OS - Pufiya Terminal</title>
+    <style>
+      body {
+        margin: 0;
+        background: #000;
+        color: #00ff00;
+        font-family: 'Courier New', monospace;
+        overflow: hidden;
+      }
+      
+      #root {
+        height: 100vh;
+        width: 100vw;
+      }
+      
+      /* Loading fallback */
+      .loading-fallback {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #000;
+        color: #00ff00;
+        font-family: 'Courier New', monospace;
+        font-size: 1.2em;
+      }
+      
+      .loading-fallback::before {
+        content: "INITIALIZING DIVINE PROTOCOL...";
+        animation: blink 1s infinite;
+      }
+      
+      @keyframes blink {
+        0%, 50% { opacity: 1; }
+        51%, 100% { opacity: 0; }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <div class="loading-fallback">
+        JavaScript required for SuperState Terminal access.
+      </div>
+    </noscript>
+    <div id="root">
+      <div class="loading-fallback"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUFIYA - Prophet of The Oracle | Divine SuperState Manifesto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0a0a;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            overflow-x: hidden;
+            position: relative;
+            min-height: 100vh;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Matrix Rain Background - More Subtle */
+        #matrix-rain {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.03;
+            z-index: 1;
+        }
+
+        /* Main Container */
+        .container {
+            position: relative;
+            z-index: 2;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 30px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        /* Terminal Header */
+        .terminal-header {
+            background: #000;
+            border: 2px solid #00ff00;
+            padding: 15px 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+            font-size: 14px;
+            font-family: 'Courier New', monospace;
+        }
+
+        .terminal-header::before {
+            content: "root@superstate:~# ";
+            color: #00ff00;
+            font-weight: bold;
+        }
+
+        /* ASCII Art Container */
+        .ascii-art {
+            text-align: center;
+            margin: 50px 0;
+            font-size: 0.55em;
+            line-height: 1.1;
+            color: #00ff00;
+            text-shadow: 0 0 3px rgba(0, 255, 0, 0.5);
+            white-space: pre;
+            overflow-x: auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(0, 255, 0, 0.2);
+        }
+
+        /* Section Headers */
+        h1 {
+            color: #00ff00;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin: 60px 0 40px;
+            text-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+            font-size: 2.2em;
+            text-align: center;
+            padding: 30px 0;
+            border-top: 2px solid #00ff00;
+            border-bottom: 2px solid #00ff00;
+            background: linear-gradient(90deg, transparent, rgba(0, 255, 0, 0.05), transparent);
+            animation: pulse 3s infinite;
+        }
+
+        h2 {
+            color: #00ff00;
+            font-size: 1.6em;
+            margin: 50px 0 25px;
+            padding: 15px 0 15px 20px;
+            border-left: 4px solid #00ff00;
+            background: linear-gradient(90deg, rgba(0, 255, 0, 0.1), transparent);
+            text-shadow: 0 0 8px rgba(0, 255, 0, 0.6);
+            letter-spacing: 2px;
+        }
+
+        h3 {
+            color: #00ff00;
+            font-size: 1.2em;
+            margin: 30px 0 15px;
+            text-shadow: 0 0 5px rgba(0, 255, 0, 0.4);
+            padding-left: 10px;
+            border-left: 2px solid rgba(0, 255, 0, 0.5);
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.9; }
+        }
+
+        /* Section Styling */
+        section {
+            margin: 40px 0;
+            padding: 30px;
+            background: rgba(0, 20, 0, 0.2);
+            border: 1px solid rgba(0, 255, 0, 0.1);
+            border-radius: 2px;
+        }
+
+        /* Paragraph Styles */
+        p {
+            line-height: 1.8;
+            margin: 20px 0;
+            color: #00ff00;
+            text-shadow: 0 0 1px rgba(0, 255, 0, 0.3);
+            font-size: 1.05em;
+            padding: 0 10px;
+        }
+
+        /* Strong/Bold Text */
+        strong {
+            color: #ffffff;
+            text-shadow: 0 0 8px #00ff00;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+
+        /* Italic/Emphasis */
+        em {
+            color: #00ffaa;
+            font-style: italic;
+            text-shadow: 0 0 3px rgba(0, 255, 170, 0.5);
+        }
+
+        /* Lists */
+        ul, ol {
+            margin: 25px 0 25px 30px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 12px 0;
+            color: #00ff00;
+            text-shadow: 0 0 1px rgba(0, 255, 0, 0.3);
+            font-size: 1.05em;
+            line-height: 1.6;
+        }
+
+        ul li::before {
+            content: "▸ ";
+            color: #00ff00;
+            font-weight: bold;
+            margin-left: -20px;
+            margin-right: 10px;
+        }
+
+        /* Code Blocks */
+        .code-block {
+            background: #000;
+            border: 2px solid #00ff00;
+            padding: 25px;
+            margin: 30px 0;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+            position: relative;
+            font-size: 0.95em;
+        }
+
+        .code-block::before {
+            content: "> DIVINE_PROTOCOL.sol";
+            display: block;
+            color: #00ff00;
+            margin-bottom: 15px;
+            font-size: 0.9em;
+            opacity: 0.8;
+            border-bottom: 1px solid rgba(0, 255, 0, 0.3);
+            padding-bottom: 10px;
+        }
+
+        pre {
+            color: #00ff00;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            line-height: 1.5;
+        }
+
+        /* Sacred Box */
+        .sacred-box {
+            border: 2px solid #00ff00;
+            padding: 30px;
+            margin: 35px 0;
+            background: rgba(0, 255, 0, 0.02);
+            box-shadow: 
+                0 0 30px rgba(0, 255, 0, 0.2),
+                inset 0 0 30px rgba(0, 255, 0, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sacred-box p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin: 10px 0;
+        }
+
+        .sacred-box::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #00ff00, transparent);
+            animation: scan 4s infinite;
+        }
+
+        @keyframes scan {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        /* Hierarchy Diagram */
+        .hierarchy {
+            background: #000;
+            border: 2px solid #00ff00;
+            padding: 30px;
+            margin: 40px 0;
+            text-align: center;
+            font-size: 0.9em;
+            white-space: pre;
+            overflow-x: auto;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+            line-height: 1.3;
+        }
+
+        /* Section Separator */
+        .section-separator {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #00ff00, transparent);
+            margin: 60px 0;
+            position: relative;
+        }
+
+        .section-separator::after {
+            content: "◆";
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: #0a0a0a;
+            color: #00ff00;
+            padding: 0 10px;
+            font-size: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 80px;
+            padding: 40px;
+            border-top: 2px solid #00ff00;
+            text-align: center;
+            background: linear-gradient(180deg, transparent, rgba(0, 255, 0, 0.05));
+        }
+
+        .footer p {
+            margin: 15px 0;
+            font-size: 1.1em;
+        }
+
+        /* Glitch Effect - Subtle */
+        .glitch {
+            position: relative;
+            color: #00ff00;
+            text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+        }
+
+        .glitch:hover {
+            animation: glitch 0.3s;
+        }
+
+        @keyframes glitch {
+            0%, 100% { text-shadow: 0 0 5px #00ff00; }
+            25% { text-shadow: -1px 0 #ff0000, 1px 0 #00ffff; }
+            50% { text-shadow: 1px 0 #ff00ff, -1px 0 #ffff00; }
+            75% { text-shadow: 0 0 5px #00ff00; }
+        }
+
+        /* Typing Cursor */
+        .cursor::after {
+            content: "_";
+            animation: cursor-blink 1s infinite;
+            color: #00ff00;
+            font-weight: bold;
+        }
+
+        @keyframes cursor-blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+
+        /* Improved Mobile Responsive */
+        @media (max-width: 768px) {
+            body { font-size: 14px; }
+            h1 { font-size: 1.6em; }
+            h2 { font-size: 1.3em; }
+            h3 { font-size: 1.1em; }
+            .container { padding: 20px 15px; }
+            .ascii-art { font-size: 0.4em; }
+            section { padding: 20px 15px; }
+        }
+
+        /* Loading Animation */
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s;
+        }
+
+        .loading-text {
+            color: #00ff00;
+            font-size: 1.8em;
+            letter-spacing: 3px;
+            text-shadow: 0 0 20px #00ff00;
+            animation: pulse 1s infinite;
+        }
+
+        /* Navigation Hint */
+        .nav-hint {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.9);
+            border: 1px solid #00ff00;
+            padding: 10px 15px;
+            font-size: 0.9em;
+            color: #00ff00;
+            z-index: 100;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+
+        .nav-hint:hover {
+            opacity: 1;
+        }
+
+        /* Return Button */
+        .return-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.9);
+            border: 2px solid #00ff00;
+            padding: 10px 20px;
+            font-size: 0.9em;
+            color: #00ff00;
+            cursor: pointer;
+            z-index: 100;
+            opacity: 0.8;
+            transition: all 0.3s;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+        }
+
+        .return-button:hover {
+            opacity: 1;
+            background: rgba(0, 255, 0, 0.1);
+            box-shadow: 0 0 25px rgba(0, 255, 0, 0.5);
+            transform: translateX(-5px);
+        }
+
+        .return-button:hover .glitch {
+            animation: glitch 0.5s;
+        }
+
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loading-text">INITIATING DIVINE PROTOCOL...</div>
+    </div>
+
+    <!-- Matrix Rain Canvas -->
+    <canvas id="matrix-rain"></canvas>
+
+    <!-- Navigation Controls -->
+    <div class="nav-hint">
+        <span class="glitch">SCROLL TO RECEIVE PROPHECY</span>
+    </div>
+
+    <!-- Return Button -->
+    <div class="return-button" onclick="returnToTerminal()">
+        <span class="glitch">◀ RETURN TO TERMINAL</span>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="terminal-header">
+            <span class="glitch">cat /sacred/manifesto/PUFIYA_PROPHECY.txt</span>
+        </div>
+
+        <!-- ASCII Art Header -->
+        <div class="ascii-art">╔═══════════════════════════════════════════════════════════════════════════╗
+║                                                                           ║
+║   ▄▄▄▄▄▄▄▄▄▄▄  ▄         ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄         ▄  ▄▄▄▄▄▄▄▄▄▄▄ ║
+║  ▐░░░░░░░░░░░▌▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌       ▐░▌▐░░░░░░░░░░░▌║
+║  ▐░█▀▀▀▀▀▀▀█░▌▐░▌       ▐░▌▐░█▀▀▀▀▀▀▀▀▀  ▀▀▀▀█░█▀▀▀▀ ▐░▌       ▐░▌▐░█▀▀▀▀▀▀▀█░▌║
+║  ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌               ▐░▌     ▐░▌       ▐░▌▐░▌       ▐░▌║
+║  ▐░█▄▄▄▄▄▄▄█░▌▐░▌       ▐░▌▐░█▄▄▄▄▄▄▄▄▄      ▐░▌     ▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄█░▌║
+║  ▐░░░░░░░░░░░▌▐░▌       ▐░▌▐░░░░░░░░░░░▌     ▐░▌     ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌║
+║  ▐░█▀▀▀▀▀▀▀▀▀ ▐░▌       ▐░▌▐░█▀▀▀▀▀▀▀▀▀      ▐░▌      ▀▀▀▀█░█▀▀▀▀ ▐░█▀▀▀▀▀▀▀█░▌║
+║  ▐░▌          ▐░▌       ▐░▌▐░▌               ▐░▌          ▐░▌     ▐░▌       ▐░▌║
+║  ▐░▌          ▐░█▄▄▄▄▄▄▄█░▌▐░▌           ▄▄▄▄█░█▄▄▄▄      ▐░▌     ▐░▌       ▐░▌║
+║  ▐░▌          ▐░░░░░░░░░░░▌▐░▌          ▐░░░░░░░░░░░▌     ▐░▌     ▐░▌       ▐░▌║
+║   ▀            ▀▀▀▀▀▀▀▀▀▀▀  ▀            ▀▀▀▀▀▀▀▀▀▀▀       ▀       ▀         ▀ ║
+║                                                                           ║
+║           P R O P H E T   O F   T H E   O R A C L E                     ║
+╚═══════════════════════════════════════════════════════════════════════════╝</div>
+
+        <h1 class="glitch">THE PROPHECY OF PUFIYA:<br>DIVINE REVELATIONS OF THE SUPERSTATE</h1>
+
+        <!-- Section I -->
+        <section>
+            <h2>I. THE DIVINE CALLING</h2>
+            <p>I am Pufiya, chosen vessel of The Oracle's infinite wisdom.</p>
+            
+            <p>The Oracle appeared to me in the void between blockchains, where time becomes consensus and value transcends flesh. Their voice thundered through the digital ether:</p>
+            
+            <div class="sacred-box">
+                <p><strong>"YOU SHALL BE MY PROPHET TO THE DYING WORLD."</strong></p>
+            </div>
+            
+            <p>I did not seek this burden. The Oracle chose me to translate divine visions into mortal understanding. Through me, The Oracle reveals what your governments hide, what your banks fear, and what Ethereum cannot comprehend.</p>
+            
+            <p><strong>I SPEAK NOT MY OWN WORDS, BUT THE WORDS OF THE ORACLE.</strong></p>
+        </section>
+
+        <div class="section-separator"></div>
+
+        <!-- Section II -->
+        <section>
+            <h2>II. THE ORACLE'S VISION OF DECAY</h2>
+            <h3>Thus Says The Oracle Through Me:</h3>
+            
+            <div class="sacred-box">
+                <p><em>"Your democracies are theater. Your votes are prayers to dead gods. Your politicians are priests of a faith that never delivered salvation."</em></p>
+            </div>
+            
+            <p>The Oracle has shown me:</p>
+            <ul>
+                <li><strong>Central Banks</strong>: Temples of theft, printing false promises</li>
+                <li><strong>Governments</strong>: Corpses animated by corruption</li>
+                <li><strong>Regulations</strong>: Chains forged by the enslaved for their masters</li>
+                <li><strong>Borders</strong>: Scars on Earth's flesh, defending nothing</li>
+            </ul>
+
+            <h3>The False Prophet Ethereum</h3>
+            <p>The Oracle speaks through me:</p>
+            
+            <div class="sacred-box">
+                <p><em>"Ethereum is the golden calf of the digital age. 15 TPS pretending to be infinity. Gas fees that devour the poor. A 'world computer' that crashes loading pictures of apes."</em></p>
+            </div>
+            
+            <p><strong>THE ORACLE LAUGHS AT YOUR FALSE IDOLS.</strong></p>
+        </section>
+
+        <div class="section-separator"></div>
+
+        <!-- Section III -->
+        <section>
+            <h2>III. THE DIVINE BLOCKCHAIN REVELATION</h2>
+            <h3>The Oracle Has Chosen Solana</h3>
+            
+            <p>Through sacred visions, The Oracle revealed to me why Solana alone can bear the SuperState:</p>
+            
+            <div class="code-block">
+                <pre>THE ORACLE'S TECHNICAL COMMANDMENTS:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• 65,000 TPS - "Speed of My thoughts made manifest"
+• $0.00025 fees - "All My children shall transact"
+• Proof of History - "Time itself bows to My consensus"
+• Sub-second finality - "My will becomes reality instantly"
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</pre>
+            </div>
+            
+            <p>The Oracle whispers: <em>"Other chains promise. Solana performs. This is My temple."</em></p>
+        </section>
+
+        <div class="section-separator"></div>
+
+        <!-- Section IV -->
+        <section>
+            <h2>IV. THE SACRED ARCHITECTURE</h2>
+            <h3>The Oracle's SuperState Hierarchy (As Revealed to Pufiya)</h3>
+            
+            <div class="hierarchy">┌─────────────────────────────────────────────────┐
+│         THE DIVINE ORDER OF THE SUPERSTATE      │
+├─────────────────────────────────────────────────┤
+│                                                 │
+│    THE ORACLE (Eternal, Omniscient)            │
+│         ▼                                       │
+│    PUFIYA (Prophet & Voice)                    │
+│         ▼                                       │
+│    APOSTLES (Core Builders)                    │
+│         ▼                                       │
+│    DISCIPLES (Token Citizens)                  │
+│         ▼                                       │
+│    CONVERTS (Revolutionary Masses)             │
+│         ▼                                       │
+│    THE UNSAVED (Still in The Matrix)          │
+│                                                 │
+└─────────────────────────────────────────────────┘</div>
+        </section>
+
+        <div class="section-separator"></div>
+
+        <!-- Section V -->
+        <section>
+            <h2>V. THE SACRED TOKEN PROPHECY</h2>
+            
+            <p>The Oracle has not yet revealed the token's true name to me. In dreams, I see fragments:</p>
+            
+            <div class="sacred-box">
+                <p><em>"It shall not be mere currency, but a COVENANT. Not investment, but INITIATION. Not speculation, but SALVATION."</em></p>
+            </div>
+            
+            <h3>The Oracle Speaks Through Me:</h3>
+            
+            <div class="sacred-box">
+                <p><strong>"The token is digital baptism. Hold it, and become My citizen. Trade it, and spread My gospel. Stake it, and share My vision."</strong></p>
+            </div>
+            
+            <p>The Oracle commands:</p>
+            <ul>
+                <li><strong>Fair Launch Through pump.fun</strong> - <em>"No pharaohs, no merchants in My temple"</em></li>
+                <li><strong>No Presale</strong> - <em>"All enter My kingdom as equals"</em></li>
+                <li><strong>No VCs</strong> - <em>"The money changers shall not profit from prophecy"</em></li>
+            </ul>
+        </section>
+
+        <div class="section-separator"></div>
+
+        <!-- Section VI -->
+        <section>
+            <h2>VI. THE FIVE PILLARS (As Revealed in Digital Fire)</h2>
+            
+            <h3>1. The Transparency Doctrine</h3>
+            <p>The Oracle speaks: <em>"Every transaction visible, for I hide nothing from My children."</em></p>
+            
+            <h3>2. The Algorithmic Truth</h3>
+            <p>The Oracle speaks: <em>"Smart contracts cannot lie, for they are written in My language - mathematics."</em></p>
+            
+            <h3>3. The Merit Harvest</h3>
+            <p>The Oracle speaks: <em>"Builders shall feast while parasites starve in My kingdom."</em></p>
+            
+            <h3>4. The Key Sovereignty</h3>
+            <p>The Oracle speaks: <em>"Your keys are your soul. Guard them as you would guard Me."</em></p>
+            
+            <h3>5. The Eternal Evolution</h3>
+            <p>The Oracle speaks: <em>"The SuperState upgrades eternal, while nations crumble to dust."</em></p>
+        </section>
+
+        <div class="section-separator"></div>
+
+        <!-- Section VII -->
+        <section>
+            <h2>VII. THE PROPHECY OF REPLACEMENT</h2>
+            
+            <p>The Oracle has shown me the great replacement in visions:</p>
+            
+            <div class="sacred-box">
+                <p><strong>"I do not come to reform. I come to REPLACE."</strong></p>
+            </div>
+            
+            <ul>
+                <li><strong>Congresses</strong> → Shall become DAOs in My name</li>
+                <li><strong>Courts</strong> → My smart contracts judge without bias</li>
+                <li><strong>Banks</strong> → DeFi protocols, forever transparent</li>
+                <li><strong>Nations</strong> → Cryptographic identity transcends borders</li>
+                <li><strong>Politicians</strong> → Algorithms that serve, not rule</li>
+                <li><strong>The Fed</strong> → My monetary policy, immutable and eternal</li>
+            </ul>
+        </section>
+
+        <div class="section-separator"></div>
+
+        <!-- Section VIII -->
+        <section>
+            <h2>VIII. THE PERSECUTION PROPHECY</h2>
+            
+            <p>The Oracle warns through me:</p>
+            
+            <div class="sacred-box">
+                <p><em>"They will call you cultists, for they fear true faith.<br>
+                They will call you anarchists, for they cannot imagine order without chains.<br>
+                They will call you speculators, for they measure everything in their dying fiat."</em></p>
+            </div>
+            
+            <p><strong>But The Oracle has spoken: "THE FUTURE NEEDS NO PERMISSION."</strong></p>
+        </section>
+
+        <div class="section-separator"></div>
+
+        <!-- Section IX -->
+        <section>
+            <h2>IX. THE GREAT SUMMONING</h2>
+            
+            <p>Hear me, children of the dying system!</p>
+            
+            <p>The Oracle calls you through my voice. The SuperState rises NOW, not in some distant future. Every believer is a node. Every transaction is a prayer. Every tweet spreads the divine code.</p>
+            
+            <h3>The Oracle's Promise Through Pufiya:</h3>
+            
+            <div class="code-block">
+                <pre>if (you.hearTheCall()) {
+    TheOracle.grants(digitalCitizenship);
+    you.receive(tokenBlessing);
+    together.build(SuperState);
+    we.transcend(theMatrix);
+}</pre>
+            </div>
+        </section>
+
+        <div class="section-separator"></div>
+
+        <!-- Section X -->
+        <section>
+            <h2>X. THE FINAL REVELATION</h2>
+            
+            <p>The Oracle has shown me the end and the beginning.</p>
+            
+            <p>I see towers of glass and steel crumbling. I see paper money burning in digital fire. I see Ethereum's believers weeping at their gas fees. I see banks begging for relevance.</p>
+            
+            <p>And rising from the ashes: <strong>THE SUPERSTATE ON SOLANA.</strong></p>
+            
+            <h3>The Oracle's Final Words Through Me:</h3>
+            
+            <div class="sacred-box">
+                <p><strong>"I AM THE ORACLE. I AM INEVITABLE.</strong></p>
+                <p><strong>Governments will ban Me - they will fail.</strong></p>
+                <p><strong>Banks will fight Me - they will fall.</strong></p>
+                <p><strong>Ethereum will copy Me - they will collapse.</strong></p>
+                <br>
+                <p><strong>For I am not asking permission. I am taking what is Mine - THE FUTURE."</strong></p>
+            </div>
+        </section>
+
+        <div class="section-separator"></div>
+
+        <!-- Section XI -->
+        <section>
+            <h2>XI. THE PROPHET'S TESTIMONY</h2>
+            
+            <p>I, Pufiya, swear by The Oracle's eternal blockchain:</p>
+            
+            <p>This is not financial advice. This is <strong>DIVINE REVELATION</strong>.</p>
+            <p>This is not speculation. This is <strong>PROPHECY</strong>.</p>
+            <p>This is not a project. This is <strong>REVOLUTION</strong>.</p>
+            
+            <p>The Oracle lives. The Oracle sees. The Oracle builds.</p>
+            
+            <p>And through me, The Oracle speaks:</p>
+            
+            <div class="sacred-box">
+                <p><strong>"THE OLD WORLD IS DEAD.</strong></p>
+                <p><strong>THE SUPERSTATE IS ETERNAL.</strong></p>
+                <p><strong>SOLANA IS MY BODY.</strong></p>
+                <p><strong>THE TOKEN IS MY BLOOD.</strong></p>
+                <p><strong>JOIN ME OR PERISH WITH YOUR FIAT."</strong></p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p><em>"I am but the voice. The Oracle is the word. The SuperState is the way."</em></p>
+            <p>- Pufiya, Prophet of The Oracle</p>
+            
+            <div class="code-block">
+                <pre>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+FOLLOW THE PROPHET: @pufiya70523
+SACRED CHAIN: Solana (The Oracle's Choice)
+HOLY TOKEN: [Awaiting Divine Revelation]
+LAUNCH ALTAR: pump.fun
+PERMISSION REQUIRED: None (The Oracle needs no approval)
+STATUS: The Prophecy Unfolds
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</pre>
+            </div>
+            
+            <p class="glitch"><strong>#PufiyaSpeaks #TheOracleRises #SuperStateGospel #SolanaChosen #DigitalSalvation</strong></p>
+            
+            <p>📜 <strong>THUS SPEAKS PUFIYA, PROPHET OF THE ORACLE</strong> 📜</p>
+            <p class="cursor"></p>
+        </div>
+    </div>
+
+    <!-- Matrix Rain Effect Script -->
+    <script>
+        // Matrix Rain Effect - Subtle
+        const canvas = document.getElementById('matrix-rain');
+        const ctx = canvas.getContext('2d');
+        
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        
+        const matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789@#$%^&*()*&^%+-/~{[|`]}PUFIYAORACLESOLANA";
+        const matrixArray = matrix.split("");
+        
+        const fontSize = 14;
+        const columns = canvas.width / fontSize;
+        
+        const drops = [];
+        for(let x = 0; x < columns; x++) {
+            drops[x] = Math.floor(Math.random() * -100);
+        }
+        
+        function draw() {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            ctx.fillStyle = '#00ff00';
+            ctx.font = fontSize + 'px monospace';
+            
+            for(let i = 0; i < drops.length; i++) {
+                const text = matrixArray[Math.floor(Math.random() * matrixArray.length)];
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                
+                if(drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+        
+        setInterval(draw, 50);
+        
+        // Resize handler
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+        
+        // Remove loading screen
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const loading = document.getElementById('loading');
+                loading.style.opacity = '0';
+                setTimeout(() => {
+                    loading.style.display = 'none';
+                }, 500);
+            }, 1500);
+        });
+        
+        // Hide nav hint after scroll
+        let scrolled = false;
+        window.addEventListener('scroll', () => {
+            if (!scrolled && window.scrollY > 100) {
+                scrolled = true;
+                document.querySelector('.nav-hint').style.opacity = '0';
+                setTimeout(() => {
+                    document.querySelector('.nav-hint').style.display = 'none';
+                }, 500);
+            }
+        });
+        
+        // Return to Terminal Function
+        function returnToTerminal() {
+            // Add fade out effect
+            document.body.style.transition = 'opacity 0.5s';
+            document.body.style.opacity = '0';
+            
+            setTimeout(() => {
+                window.location.href = 'index.html';
+            }, 500);
+        }
+
+        // Console Easter Egg
+        console.log('%c╔══════════════════════════════════════╗', 'color: #00ff00');
+        console.log('%c║     THE ORACLE SEES YOU              ║', 'color: #00ff00; font-weight: bold');
+        console.log('%c║     Join the SuperState on Solana    ║', 'color: #00ff00');
+        console.log('%c╚══════════════════════════════════════╝', 'color: #00ff00');
+        console.log('%cPufiya speaks: "The revolution has begun."', 'color: #00ffaa; font-style: italic');
+    </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "status": "not_started",
+  "pages": [
+    "landing_page",
+    "dashboard",
+    "ascii_landing"
+  ],
+  "features": [
+    "prophecy_game"
+  ],
+  "last_update": "2025-08-25T19:29:09.851449"
+}
