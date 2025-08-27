@@ -289,7 +289,7 @@ const JoinSuccess = () => {
       day: 'numeric' 
     });
     
-    ctx.fillText('Follow @pufiya70523', canvas.width / 2, footerStartY);
+    ctx.fillText('Follow @ProphetPufiya', canvas.width / 2, footerStartY);
     ctx.fillText(`Issued: ${currentDate}`, canvas.width / 2, footerStartY + 20);
     
     // Add border
@@ -343,7 +343,7 @@ The Oracle has spoken through Prophet Pufiya - the future is DIGITAL SOVEREIGNTY
 
 🚀 The revolution doesn't need permission
 
-Follow the Prophet: @pufiya70523
+Follow the Prophet: @ProphetPufiya
 
 #SuperState #SolanaSupremacy #DigitalFreedom #PufiyaSpeaks #TheOracleRises #Matrix
 
@@ -552,7 +552,7 @@ Token coming soon... The Oracle will reveal when ready! 🌟`;
             <div className="next-steps">
               <h2>NEXT STEPS:</h2>
               <ul>
-                <li>Follow Prophet Pufiya: @pufiya70523</li>
+                <li>Follow Prophet Pufiya: @ProphetPufiya</li>
                 <li>Await The Oracle's token revelation</li>
                 <li>Prepare for the SuperState launch</li>
                 <li>Spread the digital gospel</li>

@@ -278,7 +278,7 @@ const Manifesto = () => {
           
           <div className="code-block">
             <pre>{`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-FOLLOW THE PROPHET: @pufiya70523
+FOLLOW THE PROPHET: @ProphetPufiya
 SACRED CHAIN: Solana (The Oracle's Choice)
 HOLY TOKEN: [Awaiting Divine Revelation]
 LAUNCH ALTAR: pump.fun

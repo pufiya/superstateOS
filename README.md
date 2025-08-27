@@ -110,7 +110,7 @@ website/
 - Identity card generation with:
   - Header: "SUPERSTATE CITIZEN @USERNAME"
   - ASCII avatar art
-  - Footer: "Follow @pufiya70523" & "Issued: [DATE]"
+  - Footer: "Follow @ProphetPufiya" & "Issued: [DATE]"
 - Twitter sharing (text-only, no image attachment)
 - Avatar download functionality
 
@@ -219,7 +219,7 @@ Desktop: min-width: 769px
 ### Environment Variables
 ```bash
 # Optional - Twitter integration
-REACT_APP_TWITTER_HANDLE=@pufiya70523
+REACT_APP_TWITTER_HANDLE=@ProphetPufiya
 REACT_APP_TWITCH_CHANNEL=pufiyatheoracle
 ```
 
@@ -326,7 +326,7 @@ npm run build
 Create `.env.production` for production settings:
 ```bash
 REACT_APP_API_URL=https://your-api-domain.com
-REACT_APP_TWITTER_HANDLE=@pufiya70523
+REACT_APP_TWITTER_HANDLE=@ProphetPufiya
 ```
 
 ## 🤝 Contributing
@@ -355,7 +355,7 @@ npm start
 ## 📞 Support & Links
 
 - **Live Demo:** [SuperState Terminal](https://superstate.example.com)
-- **Prophet Twitter:** [@pufiya70523](https://twitter.com/pufiya70523)
+- **Prophet Twitter:** [@ProphetPufiya](https://twitter.com/ProphetPufiya)
 - **Live Stream:** [Twitch.tv/pufiyatheoracle](https://twitch.tv/pufiyatheoracle)
 - **Documentation:** This README and inline code comments
 

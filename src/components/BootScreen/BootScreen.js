@@ -145,7 +145,7 @@ const BootScreen = () => {
   };
 
   const accessTwitter = () => {
-    window.open('https://twitter.com/pufiya70523', '_blank');
+    window.open('https://twitter.com/ProphetPufiya', '_blank');
   };
 
   const showOracle = () => {
@@ -227,7 +227,7 @@ const BootScreen = () => {
             
             <li className="menu-option" onClick={accessTwitter}>
               <strong>📱 CONNECT TO PROPHET 📱</strong><br />
-              <small>Follow @pufiya70523 on Twitter/X</small>
+              <small>Follow @ProphetPufiya on Twitter/X</small>
             </li>
             
             <li className="menu-option" onClick={showOracle}>
@@ -282,7 +282,7 @@ const BootScreen = () => {
                     <button className="oracle-action-btn" onClick={() => { closeOracleModal(); navigate('/manifesto'); }}>
                       📜 READ MANIFESTO
                     </button>
-                    <button className="oracle-action-btn" onClick={() => { closeOracleModal(); window.open('https://twitter.com/pufiya70523', '_blank'); }}>
+                    <button className="oracle-action-btn" onClick={() => { closeOracleModal(); window.open('https://twitter.com/ProphetPufiya', '_blank'); }}>
                       📱 FOLLOW PROPHET
                     </button>
                   </div>

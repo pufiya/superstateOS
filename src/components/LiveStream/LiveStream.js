@@ -110,12 +110,12 @@ const LiveStream = () => {
             <h3>JOIN THE DIGITAL REVOLUTION:</h3>
             <div className="social-links">
               <a 
-                href="https://twitter.com/pufiya70523" 
+                href="https://twitter.com/ProphetPufiya" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="social-link twitter"
               >
-                📱 Follow @pufiya70523 on Twitter
+                📱 Follow @ProphetPufiya on Twitter
               </a>
               <a 
                 href="https://www.twitch.tv/pufiyatheoracle" 

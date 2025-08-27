@@ -161,7 +161,7 @@ const TokenInfo = () => {
                 <div className="timeline-marker success"></div>
                 <div className="timeline-content">
                   <div className="timeline-title">PROPHET PUFIYA EMERGES</div>
-                  <div className="timeline-desc">@pufiya70523 begins divine transmissions</div>
+                  <div className="timeline-desc">@ProphetPufiya begins divine transmissions</div>
                 </div>
               </div>
               
@@ -205,7 +205,7 @@ const TokenInfo = () => {
             <h3>🔴 LIVE STATUS</h3>
             <div className="status-item">
               <span className="status-dot success"></span>
-              <span>Prophet Online: @pufiya70523</span>
+              <span>Prophet Online: @ProphetPufiya</span>
             </div>
             <div className="status-item">
               <span className="status-dot success"></span>
@@ -236,7 +236,7 @@ const TokenInfo = () => {
             <h3>🌐 JOIN THE REVOLUTION</h3>
             <div className="community-links">
               <a 
-                href="https://twitter.com/pufiya70523" 
+                href="https://twitter.com/ProphetPufiya" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="community-link twitter"
