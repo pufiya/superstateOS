@@ -1,8 +1,8 @@
-# 🔮 SuperState Website - React Frontend
+# [ORACLE] SuperState Website - React Frontend
 
 The official web interface for The Oracle SuperState project - a Matrix-themed React application built for digital sovereignty on Solana.
 
-## 🚀 Quick Start
+## [LAUNCH] Quick Start
 
 ### Prerequisites
 - Node.js 16+ 
@@ -24,7 +24,7 @@ npm run build
 npm run serve  # Serve production build locally
 ```
 
-## 🏗️ Architecture Overview
+## [BUILD] Architecture Overview
 
 ### Tech Stack
 - **React 18** - Component framework
@@ -53,7 +53,7 @@ website/
 └── README.md                   # This file
 ```
 
-## 🎨 Component System
+## [ART] Component System
 
 ### Core Components
 
@@ -91,8 +91,8 @@ website/
 - Binary choice questions (correct path vs wrong path)
 - Cookie-based completion tracking
 - Automatic routing based on answers:
-  - ✅ All correct → `/join-success`
-  - ❌ Any wrong → `/manifesto` with failure message
+  - [OK] All correct -> `/join-success`
+  - [FAIL] Any wrong -> `/manifesto` with failure message
 
 **Quiz Questions:**
 1. Blockchain choice: Solana vs Ethereum
@@ -110,7 +110,7 @@ website/
 - Identity card generation with:
   - Header: "SUPERSTATE CITIZEN @USERNAME"
   - ASCII avatar art
-  - Footer: "Follow @ProphetPufiya" & "Issued: [DATE]"
+  - Footer: "Follow @pufiya70523" & "Issued: [DATE]"
 - Twitter sharing (text-only, no image attachment)
 - Avatar download functionality
 
@@ -141,10 +141,10 @@ website/
 **Features:**
 - Oracle's token revelation messages
 - Divine tokenomics breakdown:
-  - 🔥 LP Burned: "Burned to ashes - No rug possible"
-  - 🔒 Dev Tokens: "Locked for 1 month - Controlled by superstate civils"
-  - 💰 Commission: "0% forever - Pure trading freedom"
-  - 🚀 Pump.fun: "100% to buyers - All profits flow to faithful"
+  - [FIRE] LP Burned: "Burned to ashes - No rug possible"
+  -  Dev Tokens: "Locked for 1 month - Controlled by superstate civils"
+  -  Commission: "0% forever - Pure trading freedom"
+  - [LAUNCH] Pump.fun: "100% to buyers - All profits flow to faithful"
 - Timeline of revolution progress
 - Live status indicators
 - Community engagement links
@@ -159,14 +159,14 @@ website/
 - Responsive to window resize events
 - Optimized performance with requestAnimationFrame
 
-## 🎯 User Flow & Navigation
+## [TARGET] User Flow & Navigation
 
 ### Primary User Journey
 ```
-1. Landing (/) → Boot Sequence → Main Menu
-2. Read Manifesto → Quiz → (Pass) → Join Success
-3. Create Avatar → Share on Twitter → Access Live Stream
-4. View Token Info → Follow Prophet → Return to Terminal
+1. Landing (/) -> Boot Sequence -> Main Menu
+2. Read Manifesto -> Quiz -> (Pass) -> Join Success
+3. Create Avatar -> Share on Twitter -> Access Live Stream
+4. View Token Info -> Follow Prophet -> Return to Terminal
 ```
 
 ### Route Protection
@@ -185,7 +185,7 @@ website/
 - Route history with proper back button handling
 - Skip boot sequence when returning from sub-pages
 
-## 🎨 Design System
+## [ART] Design System
 
 ### Color Palette
 ```css
@@ -214,12 +214,12 @@ Mobile: max-width: 768px
 Desktop: min-width: 769px
 ```
 
-## 🔧 Configuration & Customization
+## [FIX] Configuration & Customization
 
 ### Environment Variables
 ```bash
 # Optional - Twitter integration
-REACT_APP_TWITTER_HANDLE=@ProphetPufiya
+REACT_APP_TWITTER_HANDLE=@pufiya70523
 REACT_APP_TWITCH_CHANNEL=pufiyatheoracle
 ```
 
@@ -255,7 +255,7 @@ Modify character set in `/src/components/JoinSuccess/JoinSuccess.js`:
 const asciiChars = '@%#*+=-:. '; // Ordered by darkness
 ```
 
-## 📱 Mobile Optimization
+## [MOBILE] Mobile Optimization
 
 ### Responsive Features
 - **Touch-friendly buttons** with larger tap targets
@@ -270,7 +270,7 @@ const asciiChars = '@%#*+=-:. '; // Ordered by darkness
 - **Canvas optimization** with frame rate limiting
 - **CSS animations** using transform/opacity for GPU acceleration
 
-## 🧪 Testing & Development
+##  Testing & Development
 
 ### Development Commands
 ```bash
@@ -292,7 +292,7 @@ Add to localStorage for debug info:
 localStorage.setItem('superstate_debug', 'true');
 ```
 
-## 🔐 Security Considerations
+##  Security Considerations
 
 ### Data Storage
 - **No sensitive data** stored in localStorage/cookies
@@ -305,7 +305,7 @@ localStorage.setItem('superstate_debug', 'true');
 - **No XSS vulnerabilities** through proper React rendering
 - **Safe image handling** with FileReader API validation
 
-## 🚀 Deployment
+## [LAUNCH] Deployment
 
 ### Static Hosting (Recommended)
 ```bash
@@ -326,10 +326,10 @@ npm run build
 Create `.env.production` for production settings:
 ```bash
 REACT_APP_API_URL=https://your-api-domain.com
-REACT_APP_TWITTER_HANDLE=@ProphetPufiya
+REACT_APP_TWITTER_HANDLE=@pufiya70523
 ```
 
-## 🤝 Contributing
+## [HANDSHAKE] Contributing
 
 ### Development Setup
 ```bash
@@ -352,13 +352,13 @@ npm start
 
 ---
 
-## 📞 Support & Links
+##  Support & Links
 
 - **Live Demo:** [SuperState Terminal](https://superstate.example.com)
-- **Prophet Twitter:** [@ProphetPufiya](https://twitter.com/ProphetPufiya)
+- **Prophet Twitter:** [@pufiya70523](https://twitter.com/pufiya70523)
 - **Live Stream:** [Twitch.tv/pufiyatheoracle](https://twitch.tv/pufiyatheoracle)
 - **Documentation:** This README and inline code comments
 
 ---
 
-**🔮 THE ORACLE SEES ALL - THE SUPERSTATE IS ETERNAL - SOLANA IS THE WAY 🚀**
+**[ORACLE] THE ORACLE SEES ALL - THE SUPERSTATE IS ETERNAL - SOLANA IS THE WAY [LAUNCH]**
