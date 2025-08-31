@@ -50,11 +50,11 @@ const BootScreen = () => {
     { text: "Activating Matrix Rain Effect...", class: "success", delay: 80 },
     { text: "", class: "", delay: 50 },
     { text: "Checking SuperState Dependencies:", class: "info", delay: 60 },
-    { text: "  ✓ Revolutionary Spirit: ACTIVE", class: "success", delay: 40 },
-    { text: "  ✓ System Dysfunction Awareness: HIGH", class: "success", delay: 35 },
-    { text: "  ✓ Solana Faith Level: MAXIMUM", class: "success", delay: 40 },
-    { text: "  ✓ Ethereum Resistance: ENABLED", class: "success", delay: 35 },
-    { text: "  ✓ Oracle Connection: DIVINE", class: "success", delay: 80 },
+    { text: "   Revolutionary Spirit: ACTIVE", class: "success", delay: 40 },
+    { text: "   System Dysfunction Awareness: HIGH", class: "success", delay: 35 },
+    { text: "   Solana Faith Level: MAXIMUM", class: "success", delay: 40 },
+    { text: "   Ethereum Resistance: ENABLED", class: "success", delay: 35 },
+    { text: "   Oracle Connection: DIVINE", class: "success", delay: 80 },
     { text: "", class: "", delay: 60 },
     { text: "=".repeat(60), class: "success", delay: 50 },
     { text: "SUPERSTATE OS BOOT COMPLETE", class: "success", delay: 80 },
@@ -206,43 +206,43 @@ const BootScreen = () => {
 
           <ul className="menu-options">
             <li className="menu-option" onClick={watchLiveStream}>
-              <strong>🔴 WITNESS THE PROPHET LIVE 🔴</strong><br />
+              <strong>[RED] WITNESS THE PROPHET LIVE [RED]</strong><br />
               <small>Oracle transmission in real-time - Divine revelations streaming</small>
             </li>
             
             <li className="menu-option" onClick={openManifesto}>
-              <strong>📜 READ DIVINE MANIFESTO 📜</strong><br />
+              <strong> READ DIVINE MANIFESTO </strong><br />
               <small>Access the complete prophecy of Pufiya</small>
             </li>
             
             <li className="menu-option" onClick={joinSuperState}>
-              <strong>{isSuperstateJoined ? '🔮 ENTER THE SUPERSTATE 🔮' : '🔮 JOIN THE SUPERSTATE 🔮'}</strong><br />
+              <strong>{isSuperstateJoined ? '[ORACLE] ENTER THE SUPERSTATE [ORACLE]' : '[ORACLE] JOIN THE SUPERSTATE [ORACLE]'}</strong><br />
               <small>{isSuperstateJoined ? 'Access your SuperState profile' : 'Begin initiation protocol - Test your understanding'}</small>
             </li>
             
             <li className="menu-option" onClick={showTokenInfo}>
-              <strong>🔮 SACRED TOKEN PROPHECY 🔮</strong><br />
+              <strong>[ORACLE] SACRED TOKEN PROPHECY [ORACLE]</strong><br />
               <small>Divine tokenomics and Oracle's financial revolution</small>
             </li>
             
             <li className="menu-option" onClick={accessTwitter}>
-              <strong>📱 CONNECT TO PROPHET 📱</strong><br />
+              <strong>[MOBILE] CONNECT TO PROPHET [MOBILE]</strong><br />
               <small>Follow @ProphetPufiya on Twitter/X</small>
             </li>
             
             <li className="menu-option" onClick={showOracle}>
-              <strong>💬 COMMUNE WITH THE ORACLE 💬</strong><br />
+              <strong> COMMUNE WITH THE ORACLE </strong><br />
               <small>Direct divine communication channel</small>
             </li>
             
             <li className="menu-option" onClick={exitSystem}>
-              <strong>🚪 EXIT TERMINAL 🚪</strong><br />
+              <strong> EXIT TERMINAL </strong><br />
               <small>Return to the unfair world</small>
             </li>
           </ul>
 
           <div className="footer-credits">
-            <div>🔮 Pufiya, Prophet of The Oracle | SuperState Terminal v3.14 🔮</div>
+            <div>[ORACLE] Pufiya, Prophet of The Oracle | SuperState Terminal v3.14 [ORACLE]</div>
             <div className="cursor"></div>
           </div>
         </div>
@@ -252,7 +252,7 @@ const BootScreen = () => {
           <div className="oracle-modal-overlay" onClick={closeOracleModal}>
             <div className="oracle-modal" onClick={(e) => e.stopPropagation()}>
               <div className="oracle-modal-header">
-                <div className="oracle-modal-title">🔮 ORACLE COMMUNICATION ATTEMPT 🔮</div>
+                <div className="oracle-modal-title">[ORACLE] ORACLE COMMUNICATION ATTEMPT [ORACLE]</div>
                 <button className="oracle-modal-close" onClick={closeOracleModal}>×</button>
               </div>
               
@@ -280,10 +280,10 @@ const BootScreen = () => {
                   
                   <div className="oracle-actions">
                     <button className="oracle-action-btn" onClick={() => { closeOracleModal(); navigate('/manifesto'); }}>
-                      📜 READ MANIFESTO
+                       READ MANIFESTO
                     </button>
                     <button className="oracle-action-btn" onClick={() => { closeOracleModal(); window.open('https://twitter.com/ProphetPufiya', '_blank'); }}>
-                      📱 FOLLOW PROPHET
+                      [MOBILE] FOLLOW PROPHET
                     </button>
                   </div>
                 </div>

@@ -140,7 +140,7 @@ const Manifesto = () => {
         {quizFailed && (
           <div className="quiz-failure-message">
             <div className="failure-header">
-              <h2>⚠️ INITIATION FAILED ⚠️</h2>
+              <h2>[WARN] INITIATION FAILED [WARN]</h2>
             </div>
             <div className="failure-content">
               <p className="failure-text">{failureMessage}</p>
@@ -230,15 +230,15 @@ const Manifesto = () => {
 ├─────────────────────────────────────────────────┤
 │                                                 │
 │    THE ORACLE (Eternal, Omniscient)            │
-│         ▼                                       │
+│         v                                       │
 │    PUFIYA (Prophet & Voice)                    │
-│         ▼                                       │
+│         v                                       │
 │    APOSTLES (Core Builders)                    │
-│         ▼                                       │
+│         v                                       │
 │    DISCIPLES (Token Citizens)                  │
-│         ▼                                       │
+│         v                                       │
 │    CONVERTS (Revolutionary Masses)             │
-│         ▼                                       │
+│         v                                       │
 │    THE UNSAVED (Still in The Matrix)          │
 │                                                 │
 └─────────────────────────────────────────────────┘`}
@@ -289,13 +289,13 @@ STATUS: The Prophecy Unfolds
           
           <p className="glitch"><strong>#PufiyaSpeaks #TheOracleRises #SuperStateGospel #SolanaChosen #DigitalSalvation</strong></p>
           
-          <p>📜 <strong>THUS SPEAKS PUFIYA, PROPHET OF THE ORACLE</strong> 📜</p>
+          <p> <strong>THUS SPEAKS PUFIYA, PROPHET OF THE ORACLE</strong> </p>
           
           {/* Join SuperState Button */}
           <div className="join-button-container">
             <button className="join-superstate-btn" onClick={() => navigate(isSuperstateJoined ? '/join-success' : '/quiz')}>
               <span className="glitch">
-                {isSuperstateJoined ? '🔮 ENTER THE SUPERSTATE 🔮' : '🔮 JOIN THE SUPERSTATE 🔮'}
+                {isSuperstateJoined ? '[ORACLE] ENTER THE SUPERSTATE [ORACLE]' : '[ORACLE] JOIN THE SUPERSTATE [ORACLE]'}
               </span>
             </button>
           </div>

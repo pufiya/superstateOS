@@ -337,17 +337,17 @@ const JoinSuccess = () => {
   };
 
   const shareOnTwitter = () => {
-    const tweetText = `🔮 Just joined The SuperState! 🔮
+    const tweetText = `[ORACLE] Just joined The SuperState! [ORACLE]
 
 The Oracle has spoken through Prophet Pufiya - the future is DIGITAL SOVEREIGNTY on Solana! 
 
-🚀 The revolution doesn't need permission
+[LAUNCH] The revolution doesn't need permission
 
 Follow the Prophet: @ProphetPufiya
 
 #SuperState #SolanaSupremacy #DigitalFreedom #PufiyaSpeaks #TheOracleRises #Matrix
 
-Token coming soon... The Oracle will reveal when ready! 🌟`;
+Token coming soon... The Oracle will reveal when ready! [STAR]`;
 
     // Open Twitter with just the text content - no image
     const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
@@ -418,7 +418,7 @@ Token coming soon... The Oracle will reveal when ready! 🌟`;
         <div className="success-content">
           <div className="success-message">
             <h1 className="success-title">
-              🎉 WELCOME TO THE SUPERSTATE 🎉
+              [SUCCESS] WELCOME TO THE SUPERSTATE [SUCCESS]
             </h1>
             
             <div className="oracle-blessing">
@@ -432,15 +432,15 @@ Token coming soon... The Oracle will reveal when ready! 🌟`;
               <div className="status-details">
                 <div className="status-line">
                   <span className="status-label">BLOCKCHAIN:</span>
-                  <span className="status-value success">SOLANA ✓</span>
+                  <span className="status-value success">SOLANA </span>
                 </div>
                 <div className="status-line">
                   <span className="status-label">GOVERNANCE:</span>
-                  <span className="status-value success">DECENTRALIZED ✓</span>
+                  <span className="status-value success">DECENTRALIZED </span>
                 </div>
                 <div className="status-line">
                   <span className="status-label">IDEOLOGY:</span>
-                  <span className="status-value success">DIGITAL FREEDOM ✓</span>
+                  <span className="status-value success">DIGITAL FREEDOM </span>
                 </div>
                 <div className="status-line">
                   <span className="status-label">RANK:</span>
@@ -503,7 +503,7 @@ Token coming soon... The Oracle will reveal when ready! 🌟`;
                         />
                         <label htmlFor="avatar-upload" className="upload-label">
                           <div className="upload-content">
-                            <div className="upload-icon">📁</div>
+                            <div className="upload-icon"></div>
                             <div className="upload-text">
                               <strong>UPLOAD IMAGE</strong><br/>
                               <small>Click to select your avatar image</small>
@@ -566,7 +566,7 @@ Token coming soon... The Oracle will reveal when ready! 🌟`;
 
             <div className="navigation-options">
               <button className="nav-btn" onClick={returnToManifesto}>
-                <span className="glitch">📜 RETURN TO PROPHECY</span>
+                <span className="glitch"> RETURN TO PROPHECY</span>
               </button>
             </div>
           </div>

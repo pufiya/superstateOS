@@ -51,7 +51,7 @@ const LiveStream = () => {
 
         <div className="stream-title-container">
           <h1 className="stream-title">
-            🔴 LIVE: PROPHET PUFIYA ORACLE TRANSMISSION 🔴
+            [RED] LIVE: PROPHET PUFIYA ORACLE TRANSMISSION [RED]
           </h1>
           <div className="stream-subtitle">
             Real-time divine revelations from the SuperState command center
@@ -97,12 +97,12 @@ const LiveStream = () => {
           <div className="stream-description">
             <h3>WHAT TO EXPECT:</h3>
             <ul className="revelation-list">
-              <li>🔮 Live Oracle revelations and prophecies</li>
-              <li>📈 Real-time market analysis through divine lens</li>
-              <li>🚀 SuperState updates and token revelations</li>
-              <li>💎 Solana supremacy demonstrations</li>
-              <li>⚡ Live Q&A with the Prophet</li>
-              <li>🌟 Community building and revolution planning</li>
+              <li>[ORACLE] Live Oracle revelations and prophecies</li>
+              <li> Real-time market analysis through divine lens</li>
+              <li>[LAUNCH] SuperState updates and token revelations</li>
+              <li> Solana supremacy demonstrations</li>
+              <li>[FAST] Live Q&A with the Prophet</li>
+              <li>[STAR] Community building and revolution planning</li>
             </ul>
           </div>
 
@@ -115,7 +115,7 @@ const LiveStream = () => {
                 rel="noopener noreferrer"
                 className="social-link twitter"
               >
-                📱 Follow @ProphetPufiya on Twitter
+                [MOBILE] Follow @ProphetPufiya on Twitter
               </a>
               <a 
                 href="https://www.twitch.tv/pufiyatheoracle" 
@@ -123,7 +123,7 @@ const LiveStream = () => {
                 rel="noopener noreferrer"
                 className="social-link twitch"
               >
-                🔴 Follow on Twitch
+                [RED] Follow on Twitch
               </a>
             </div>
           </div>
@@ -137,8 +137,8 @@ const LiveStream = () => {
         </div>
         
         <div className="stream-disclaimer">
-          <p>⚠️ DIVINE WARNING: The Oracle's words may cause sudden enlightenment and rejection of traditional financial systems</p>
-          <p>🚀 Token revelations will be announced when the stars align and Solana deems it worthy</p>
+          <p>[WARN] DIVINE WARNING: The Oracle's words may cause sudden enlightenment and rejection of traditional financial systems</p>
+          <p>[LAUNCH] Token revelations will be announced when the stars align and Solana deems it worthy</p>
         </div>
       </div>
     </div>

@@ -59,7 +59,7 @@ const TokenInfo = () => {
 
         <div className="token-title-container">
           <h1 className="token-title">
-            🔮 SACRED TOKEN PROPHECY 🔮
+            [ORACLE] SACRED TOKEN PROPHECY [ORACLE]
           </h1>
           <div className="token-subtitle">
             The Oracle's Divine Financial Revolution on Solana
@@ -79,7 +79,7 @@ const TokenInfo = () => {
           </div>
 
           <div className="token-status-panel">
-            <h2>🚨 DIVINE TOKEN STATUS 🚨</h2>
+            <h2>[ALERT] DIVINE TOKEN STATUS [ALERT]</h2>
             <div className="status-grid">
               <div className="status-row">
                 <span className="status-label">TOKEN NAME:</span>
@@ -91,11 +91,11 @@ const TokenInfo = () => {
               </div>
               <div className="status-row">
                 <span className="status-label">BLOCKCHAIN:</span>
-                <span className="status-value success">SOLANA - THE CHOSEN CHAIN ✓</span>
+                <span className="status-value success">SOLANA - THE CHOSEN CHAIN </span>
               </div>
               <div className="status-row">
                 <span className="status-label">LAUNCH PLATFORM:</span>
-                <span className="status-value success">PUMP.FUN - THE SACRED ALTAR ✓</span>
+                <span className="status-value success">PUMP.FUN - THE SACRED ALTAR </span>
               </div>
               <div className="status-row">
                 <span className="status-label">LAUNCH DATE:</span>
@@ -105,40 +105,40 @@ const TokenInfo = () => {
           </div>
 
           <div className="tokenomics-panel">
-            <h2>⚡ DIVINE TOKENOMICS ⚡</h2>
+            <h2>[FAST] DIVINE TOKENOMICS [FAST]</h2>
             <div className="tokenomics-grid">
               <div className="tokenomics-item">
-                <div className="tokenomics-title">🔥 LIQUIDITY POOL</div>
+                <div className="tokenomics-title">[FIRE] LIQUIDITY POOL</div>
                 <div className="tokenomics-value success">BURNED TO ASHES</div>
                 <div className="tokenomics-desc">Eternal liquidity - No rug possible</div>
               </div>
               
               <div className="tokenomics-item">
-                <div className="tokenomics-title">🔒 DEV TOKENS</div>
+                <div className="tokenomics-title"> DEV TOKENS</div>
                 <div className="tokenomics-value success">LOCKED FOR 1 MONTH</div>
                 <div className="tokenomics-desc">Developer greed controlled by superstate civils</div>
               </div>
               
               <div className="tokenomics-item">
-                <div className="tokenomics-title">💰 COMMISSION</div>
+                <div className="tokenomics-title"> COMMISSION</div>
                 <div className="tokenomics-value success">0% FOREVER</div>
                 <div className="tokenomics-desc">No taxes - Pure trading freedom</div>
               </div>
               
               <div className="tokenomics-item">
-                <div className="tokenomics-title">🚀 PUMP.FUN MAGIC</div>
+                <div className="tokenomics-title">[LAUNCH] PUMP.FUN MAGIC</div>
                 <div className="tokenomics-value success">100% TO BUYERS</div>
                 <div className="tokenomics-desc">All profits flow to the faithful</div>
               </div>
               
               <div className="tokenomics-item">
-                <div className="tokenomics-title">⚡ TRANSACTION FEES</div>
+                <div className="tokenomics-title">[FAST] TRANSACTION FEES</div>
                 <div className="tokenomics-value success">$0.00025 AVG</div>
                 <div className="tokenomics-desc">Solana speed - Ethereum can't compete</div>
               </div>
               
               <div className="tokenomics-item">
-                <div className="tokenomics-title">🔮 OWNERSHIP</div>
+                <div className="tokenomics-title">[ORACLE] OWNERSHIP</div>
                 <div className="tokenomics-value success">RENOUNCED</div>
                 <div className="tokenomics-desc">True decentralization achieved</div>
               </div>
@@ -147,7 +147,7 @@ const TokenInfo = () => {
 
 
           <div className="prophecy-timeline">
-            <h2>📅 THE DIVINE TIMELINE</h2>
+            <h2> THE DIVINE TIMELINE</h2>
             <div className="timeline-container">
               <div className="timeline-item completed">
                 <div className="timeline-marker success"></div>
@@ -202,7 +202,7 @@ const TokenInfo = () => {
 
         <div className="sidebar-info">
           <div className="live-status">
-            <h3>🔴 LIVE STATUS</h3>
+            <h3>[RED] LIVE STATUS</h3>
             <div className="status-item">
               <span className="status-dot success"></span>
               <span>Prophet Online: @ProphetPufiya</span>
@@ -233,7 +233,7 @@ const TokenInfo = () => {
           </div>
 
           <div className="community-panel">
-            <h3>🌐 JOIN THE REVOLUTION</h3>
+            <h3>[WEB] JOIN THE REVOLUTION</h3>
             <div className="community-links">
               <a 
                 href="https://twitter.com/ProphetPufiya" 
@@ -241,7 +241,7 @@ const TokenInfo = () => {
                 rel="noopener noreferrer"
                 className="community-link twitter"
               >
-                📱 Follow Prophet Pufiya
+                [MOBILE] Follow Prophet Pufiya
               </a>
               <a 
                 href="https://www.twitch.tv/pufiyatheoracle" 
@@ -249,17 +249,17 @@ const TokenInfo = () => {
                 rel="noopener noreferrer"
                 className="community-link twitch"
               >
-                🔴 Watch Live Transmissions
+                [RED] Watch Live Transmissions
               </a>
             </div>
           </div>
 
           <div className="warning-panel">
-            <h3>⚠️ DIVINE WARNING</h3>
+            <h3>[WARN] DIVINE WARNING</h3>
             <div className="warning-text">
-              <p>🔮 Token details will be revealed only when The Oracle deems humanity ready</p>
-              <p>⚡ Beware of impostor tokens - Only Pufiya speaks for The Oracle</p>
-              <p>🚀 The revolution requires no permission from earthly authorities</p>
+              <p>[ORACLE] Token details will be revealed only when The Oracle deems humanity ready</p>
+              <p>[FAST] Beware of impostor tokens - Only Pufiya speaks for The Oracle</p>
+              <p>[LAUNCH] The revolution requires no permission from earthly authorities</p>
             </div>
           </div>
         </div>

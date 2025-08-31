@@ -1,0 +1,13 @@
+{
+  "id": "plan_1756335874265_h4ydeh",
+  "created_at": "2025-08-27T23:04:34.265Z",
+  "updated_at": "2025-08-27T23:04:34.266Z",
+  "input_text": "Add ROADMAP to website",
+  "purposed_plan": "Create a new page displaying the SuperState roadmap with Matrix-themed styling, ASCII art headers, and glitch effects. The roadmap should show the phases of the revolution.",
+  "confirmation": false,
+  "completed": false,
+  "status": "pending_confirmation",
+  "implementation_notes": null,
+  "git_branch": null,
+  "pr_url": null
+}

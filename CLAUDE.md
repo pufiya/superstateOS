@@ -1,8 +1,8 @@
-# 🔮 WEBSITE BUILDER AGENT CONTEXT - SUPERSTATE ORACLE
+# [ORACLE] WEBSITE BUILDER AGENT CONTEXT - SUPERSTATE ORACLE
 
 ## CRITICAL INSTRUCTIONS FOR AI AGENTS
 
-### ⚠️ MANDATORY WORKFLOW - NO EXCEPTIONS
+### [WARN] MANDATORY WORKFLOW - NO EXCEPTIONS
 
 1. **MUST USE PLAN-HANDLER SYSTEM**
    ```bash
@@ -46,7 +46,7 @@
 
 ---
 
-## 🎨 DESIGN SYSTEM - STRICT ADHERENCE REQUIRED
+## [ART] DESIGN SYSTEM - STRICT ADHERENCE REQUIRED
 
 ### Matrix Theme - MUST MAINTAIN
 ```css
@@ -91,7 +91,7 @@ Base Size: 16px (14px mobile)
 
 ---
 
-## 📜 SUPERSTATE IDEOLOGY - CORE BELIEFS
+##  SUPERSTATE IDEOLOGY - CORE BELIEFS
 
 ### CRITICAL: Always Reference Latest MANIFESTO.md
 **MANDATORY**: Before any website work, read `/MANIFESTO.md` for current ideology.
@@ -125,7 +125,7 @@ Base Size: 16px (14px mobile)
 
 ---
 
-## 🏗️ WEBSITE ARCHITECTURE
+## [BUILD] WEBSITE ARCHITECTURE
 
 ### Current Structure (MUST MAINTAIN)
 ```
@@ -156,17 +156,17 @@ website/
 
 ### Navigation Flow
 ```
-/ (Boot) → Main Menu → 
-  → /manifesto (Read prophecy)
-  → /quiz (Test understanding)
-  → /join-success (Become citizen)
-  → /live-stream (Watch Prophet)
-  → /token-info (Token details)
+/ (Boot) -> Main Menu -> 
+  -> /manifesto (Read prophecy)
+  -> /quiz (Test understanding)
+  -> /join-success (Become citizen)
+  -> /live-stream (Watch Prophet)
+  -> /token-info (Token details)
 ```
 
 ---
 
-## 🔧 TECHNICAL REQUIREMENTS
+## [FIX] TECHNICAL REQUIREMENTS
 
 ### Dependencies (DO NOT REMOVE)
 - React 18
@@ -188,7 +188,7 @@ website/
 
 ---
 
-## 📝 CONTENT GUIDELINES
+## [NOTE] CONTENT GUIDELINES
 
 ### Prophet Information
 - **Twitter**: @pufiya70523 (always use this handle)
@@ -214,33 +214,33 @@ website/
 
 ---
 
-## 🚨 CRITICAL WARNINGS
+## [ALERT] CRITICAL WARNINGS
 
 ### NEVER DO:
-- ❌ Change the Matrix green color scheme
-- ❌ Add modern UI elements (cards, shadows, gradients)
-- ❌ Remove ASCII art or terminal aesthetics
-- ❌ Mention other blockchains positively
-- ❌ Create rounded corners or soft edges
-- ❌ Use external image assets
-- ❌ Commit directly to main branch
-- ❌ Skip the planning phase
-- ❌ Ignore the manifesto ideology
+- [FAIL] Change the Matrix green color scheme
+- [FAIL] Add modern UI elements (cards, shadows, gradients)
+- [FAIL] Remove ASCII art or terminal aesthetics
+- [FAIL] Mention other blockchains positively
+- [FAIL] Create rounded corners or soft edges
+- [FAIL] Use external image assets
+- [FAIL] Commit directly to main branch
+- [FAIL] Skip the planning phase
+- [FAIL] Ignore the manifesto ideology
 
 ### ALWAYS DO:
-- ✅ Maintain terminal/Matrix aesthetic
-- ✅ Create feature branch first
-- ✅ Present plan before coding
-- ✅ Include glitch/scan effects
-- ✅ Keep black background
-- ✅ Use green text (#00ff00)
-- ✅ Add ASCII art where possible
-- ✅ Create PR for all changes
-- ✅ Follow the Oracle's prophecy
+- [OK] Maintain terminal/Matrix aesthetic
+- [OK] Create feature branch first
+- [OK] Present plan before coding
+- [OK] Include glitch/scan effects
+- [OK] Keep black background
+- [OK] Use green text (#00ff00)
+- [OK] Add ASCII art where possible
+- [OK] Create PR for all changes
+- [OK] Follow the Oracle's prophecy
 
 ---
 
-## 🔮 EXAMPLE WORKFLOW - CORRECT
+## [ORACLE] EXAMPLE WORKFLOW - CORRECT
 
 ### User Request: "I want to add a countdown timer for the token launch"
 
@@ -256,7 +256,7 @@ node plan-handler.js plan "Add countdown timer for token launch" "Create React c
   "id": "plan_123456789_abc123",
   "input_text": "Add countdown timer for token launch",
   "purposed_plan": "Create React component with Matrix theme...",
-  "confirmation": false,  // ← MUST BE SET TO true
+  "confirmation": false,  // <- MUST BE SET TO true
   "completed": false
 }
 ```
@@ -277,7 +277,7 @@ node plan-handler.js implement plan_123456789_abc123
 node plan-handler.js complete plan_123456789_abc123 "https://github.com/repo/pr/123"
 ```
 
-### ❌ WRONG WORKFLOW (DO NOT DO THIS)
+### [FAIL] WRONG WORKFLOW (DO NOT DO THIS)
 ```bash
 # This is FORBIDDEN:
 git checkout -b feature/countdown
@@ -287,7 +287,7 @@ git checkout -b feature/countdown
 
 ---
 
-## 📞 CONTACT & RESOURCES
+##  CONTACT & RESOURCES
 
 - **Live Site**: [To be deployed]
 - **Prophet Twitter**: @pufiya70523
@@ -299,4 +299,4 @@ git checkout -b feature/countdown
 
 **REMEMBER: The Oracle sees all. The SuperState is eternal. Every line of code serves the revolution.**
 
-**THE FUTURE DOESN'T NEED PERMISSION - BUT YOUR CODE CHANGES DO!** 🔮
+**THE FUTURE DOESN'T NEED PERMISSION - BUT YOUR CODE CHANGES DO!** [ORACLE]
